@@ -1,0 +1,121 @@
+.contact__section {
+    background-color: #f0f0f0;
+    padding: 80px 0;
+}
+
+.contact-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contact-content h2 {
+    /* font-size: 36px; */
+    margin-bottom: 30px;
+}
+
+.contact-content p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form a {
+    text-decoration: none;
+    background-color: #006a80;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form a:hover {
+    background-color: #00516a;
+}
+.form_body{
+    position: relative;
+}
+.form_body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 81, 106, 0.9) url("../img/loading.gif") center / 50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition:  all 0.3s ease 0s;
+}
+.form_body ._sending::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contact-form-problem__main-section {
+    margin: 150px auto;
+}
+
+.contact-form-problem__main-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 32px;
+}
+.contact-form-problem__link a{
+    text-decoration: none;
+}
+.contact-form-problem__link a:hover{
+    color: var(--main-accent-color);
+}
+.contact-form-problem__links-container{
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.contact-form-problem__link-text{
+    position: relative;
+    margin-left: 8px;
+    letter-spacing: 1px;
+}
+.contact-form-problem__link-text:hover{
+    color: #006a80;
+}
+/* .contact-form-problem__link-text:hover::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--main-accent-color);
+    position: absolute;
+    left: 0;
+    animation: underlineSlide 0.3s forwards ease-out;
+}
+@keyframes underlineSlide {
+    to {
+        width: 100%;
+        left: 0;
+    }
+} */

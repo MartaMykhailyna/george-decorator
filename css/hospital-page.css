@@ -1,0 +1,116 @@
+.hospitals-page__main-section{
+    margin: 50px auto;
+    padding: 10px 40px;
+    /* display: flex; */
+    background-color: white;
+    color: var(--main-accent-color);
+    width: 100%;
+}
+.hospitals-page__main-section h3{
+    font-size: 25px;
+}
+.hospitals-page__main-section-text-container{
+    margin: 0 auto;
+    text-align: justify;
+}
+.hospitals-page-main-section__paragraph {
+    margin: 10px 0;
+}
+.hospitals-page-main-section__why-choose {
+    margin: 20px 0;
+}
+.hospitals-page-main-section__bullet-points {
+    margin-top: 10px;
+}
+.hospitals-page-main-section__bullet-points li{
+    margin-left: 20px;
+}
+.hospitals-page-main-section__bullet-points li:not(:last-child){
+    margin-bottom: 10px;
+}
+.hospitals-page-main-section__services {
+    margin: 20px 0;
+}
+
+.hospitals-page-main-section__photos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    overflow-y: hidden;
+    height: 100%;
+    max-height: 310px;
+}
+
+.hospitals-page-main-section__photo-container-1,
+.hospitals-page-main-section__photo-container-2 {
+    max-width: 500px;
+}
+
+.hospitals-page-main-section__photo-container-1 img,
+.hospitals-page-main-section__photo-container-2 img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+@media(max-width: 1200px){
+    .hospitals-page-main-section__photos{
+        justify-content: safe;
+        gap: 10px;
+    }
+    .hospitals-page-main-section__photo-container-1,
+    .hospitals-page-main-section__photo-container-2 {
+        width: 60%;
+    }
+}
+@media (max-width: 800px){
+    .hospitals-page-main-section__photo-container-1,
+    .hospitals-page-main-section__photo-container-2 {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+    .hospitals-page__main-section {
+        margin-bottom: 20px;
+    }
+    .hospitals-page-main-section__photos {
+        flex-direction: column;
+        row-gap: 30px;
+        max-height: 500px;
+    }
+    .hospitals-page-main-section__photo-container-1,
+    .hospitals-page-main-section__photo-container-2{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 630px) {
+    .hospitals-page-main-section__photos {
+        margin-top: 10px;
+        flex-direction: column;
+        row-gap: 10px;
+        max-height: 500px;
+    }
+    .hospitals-page-main-section__photo-container-1,
+    .hospitals-page-main-section__photo-container-2{
+        width: 70%;
+    }
+}
+
+@media (max-width: 543px){
+    .hospitals-page__main-section-text-container{
+        margin: 0 auto;
+        text-align: unset;
+    }
+    .hospitals-page-main-section__photos {
+        margin-top: 10px;
+        flex-direction: column;
+        /* max-height: 500px; */
+    }
+        .hospitals-page-main-section__photo-container-1,
+    .hospitals-page-main-section__photo-container-2{
+        width: 100%;
+    }
+}

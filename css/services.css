@@ -1,0 +1,128 @@
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+.services-container h2{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service {
+    background-color: #fff;
+    margin: 20px;
+    padding: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    width: 95%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.right-side  {
+    display: flex;
+    flex-direction: row-reverse; 
+}
+
+.service:not(.right-side) {
+    display: flex;
+    flex-direction: row; 
+}
+
+.services-photo-container {
+    width: 90%;
+    max-width: 475px;
+    height: 90%;
+    margin: 0 20px;
+    object-fit: cover;
+    object-position: center;  
+    overflow: hidden;
+}
+.service-content{
+    padding: 10px 20px;
+    text-align: left;
+    width: 70%;
+ }
+.service-content h3 {
+    /* width: 40%; */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.service-content p{
+    margin-bottom: 20px;
+}
+.services__link a{
+    text-decoration: none;
+}
+
+@media (max-width: 1071px){
+    .service{
+        padding: 0;
+        margin: 10px auto 20px;
+    }
+    .services-container{
+        padding: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+    .services-photo-container{
+        width: 70%;
+    }
+    /* .right-side .services-photo-container{
+        margin-left: 20px;
+    } */
+    .service-content{
+        width: 65%;
+    }
+    .service-content p, .service-content a{
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 900px){
+    .service-content{
+        width: 60%;
+    }
+    /* .services-photo-container{
+        width: 40%;
+    } */
+}
+@media (max-width: 768px){
+    .service:not(.right-side){
+        flex-direction: column;
+        height: 100%;
+    }
+    .right-side{
+        flex-direction: column;
+        height: 100%;
+    }
+    .services-photo-container{
+        margin: 20px 0 0 0; 
+    }
+    .service-content{
+        width: 100%;
+        text-align: center;
+    }
+    /* .right-side .services-photo-container{
+        margin-bottom: 0;
+        margin-top: 20px;
+    } */
+}
+@media (max-width: 702px){
+    .service{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .service-content p, .service-content a{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .services-photo-container{
+        width: 50%;
+    }
+}

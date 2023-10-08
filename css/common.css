@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}.landing{
+    width: 100%;
+    color: var(--main-accent-color);
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+}
+:root{
+    --main-font: "Roboto", Arial, sans-serif;
+    --main-accent-color: #006a80;
+    --main-background-color: #fff;
+    --second-background-color: #f0f0f0;
+
+
+
+    --swiper-navigation-color: var(--main-accent-color);
+    --swiper-navigation-bullet-size: 5px;
+    --swiper-navigation-bullet-width: 5px;
+    --swiper-navigation-bullet-height: 5px;
+    --swiper-navigation-bullet-inactive-color: rgba(0, 106, 128, 0.72);
+    --swiper-navigation-bullet-inactive-opacity: 1;
+    --swiper-navigation-bullet-opacity: 1;
+    --swiper-navigation-bullet-horizontal-gap: 4px;
+    --swiper-navigation-bullet-vertical-gap: 6px;
+    --swiper-navigation-bottom: 10%;
+}
+/* Reset some default styles */
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 34px;
+}
+p{
+    font-size: 20px;
+    line-height: 26px;
+}
+a{
+    text-decoration: none;
+    font-family: var(--main-font);
+    color: var(--main-accent-color);
+    font-size: 20px;
+}
+.text-underline:hover::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--main-accent-color);
+    position: absolute;
+    left: 0;
+    animation: underlineSlide 0.3s forwards ease-out;
+}
+@keyframes underlineSlide {
+    to {
+        width: 100%;
+        left: 0;
+    }
+}
+.bold-font{
+    font-weight: bold;
+}
+@media (max-width: 1000px){
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 28px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    a{
+        font-family: var(--main-font);
+        color: var(--main-accent-color);
+        font-size: 18px;
+    }
+}
+@media (max-width: 900px){
+     p{
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+.form__input._error{
+    box-shadow: 0 0 15px red;
+}
