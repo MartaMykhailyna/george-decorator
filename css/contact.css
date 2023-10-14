@@ -84,12 +84,19 @@
 .contact-form-problem__link a{
     text-decoration: none;
 }
+.contact-form-problem__phone-number-link-container{
+    display: flex;
+}
+.contact-form-problem__phone-number-links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 .contact-form-problem__link a:hover{
     color: var(--main-accent-color);
 }
 .contact-form-problem__links-container{
     margin: 0 auto;
-    width: 600px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
